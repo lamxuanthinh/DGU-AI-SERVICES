@@ -16,7 +16,7 @@ def init_retriever():
 index = init_pinecone()
 retriever = init_retriever()
 
-@app.route("/api/home", methods=["GET"])
+@app.route("/api/search", methods=["GET"])
 def home():
     query = request.args.get('query', default='', type=str)
 
